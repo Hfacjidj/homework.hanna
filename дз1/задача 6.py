@@ -1,5 +1,5 @@
 a = input()
 if '.' in a:
-    print ('не является')
+    print('не является')
 else:
-    print ('является')
+    print('является')
