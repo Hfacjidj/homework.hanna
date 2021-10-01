@@ -1,7 +1,7 @@
 a2 = str(input('введите что-то'))
-d2 = list()
-while a2 == ' ':
-    d2.append(a2)
+b2 = list()
+while a2 != '':
     a2 = str(input())
+    b2.append(a2)
 else:
-    print(d2)
+    print(b2)
