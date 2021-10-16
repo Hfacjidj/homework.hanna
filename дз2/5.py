@@ -1,3 +1,3 @@
-k =list(input())
+k = input()
 for i in k:
-    print (k[i])
+    print (i)
