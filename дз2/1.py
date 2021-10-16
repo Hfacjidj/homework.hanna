@@ -1,6 +1,6 @@
-a2 = input('введите что-то')
-b2 = list()
-while a2 != ' ':
-    b2.append(a2)
-    a2 = input()
-print(b2)
+x = input("Введите что-нибудь")
+b = list()
+while x != '':
+    b.append(x)
+    x = input()
+print(b)
