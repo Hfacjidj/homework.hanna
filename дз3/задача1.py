@@ -1,8 +1,8 @@
 def itog():
     x = input("Введите что-нибудь")
     b = []
-    while x != '': #пока не будет введена пустая строка будет выполнятся...
-        b.append(x) #append -добавляет в список b элементы х
+    while x != '':  
+        b.append(x)
         x = input()
     print()
 itog()
