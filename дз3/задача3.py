@@ -4,5 +4,5 @@ def digital(n):
     for n in range(n):
         print(k1, end = ' ')
         k1, k2 = k2, k1 + k2 
-
+        
 digital(n)
