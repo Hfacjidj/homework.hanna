@@ -4,5 +4,5 @@ def itog():
     while x != '':  
         b.append(x)
         x = input()
-    print()
-itog()
+        print(b)
+print(itog())

@@ -1,4 +1,3 @@
-n = int(input())
 def vrema(n):
     if n in [12, 1, 2]:
         print ('winter')
@@ -10,4 +9,5 @@ def vrema(n):
         print ('autumn')
     else:
         print('нету такого месяца')
+n = int(input())
 print(vrema(n))
