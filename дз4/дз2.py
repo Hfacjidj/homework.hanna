@@ -5,5 +5,7 @@ def factorial(n):
     return x
 n = int(input("Введите число "))
 print(factorial(n))
-assert factorial(0) == 1
-assert factorial(5) == 120
+
+def function():
+    assert function(3) == 6
+    assert function(0) == 1

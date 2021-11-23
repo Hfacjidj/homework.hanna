@@ -1,17 +1,15 @@
-def function(f):
-    try:
-        assert len(f) == len(set(f))
-        return True
-    except AssertionError:
-        return False
+def function():
+    f = input("Введите элементы списка\n")
+    b = list()
+    while f != '':
+        b.append(f)
+        f = input()
+    if len(b) == len(set(b)):
+        print("True")
+    else:
+        print("False")
+print(function())
 
-a = list()
-print("Введите список : ")
-i = input()
-a.append(i)
-while i != "":
-    i = input()
-    a.append(i)
-a.pop()
-
-print(function(a))
+def function():
+    assert function([1, 2, 3, 4, 5]) == "True"
+    assert function([1, 2, 2, 3]) == "False"
