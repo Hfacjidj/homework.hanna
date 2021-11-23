@@ -3,6 +3,6 @@ def itog():
     b = []
     while x != '':  
         b.append(x)
-        x = input()
+        x = input('ввод ')
         print(b)
 print(itog())
