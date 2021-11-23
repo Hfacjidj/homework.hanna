@@ -1,9 +1,9 @@
-def ted(b):
-    sr = sum(b) / len(b)
-    print('Среднее арифметическое =', sr)
-n = input('ввод ')
-b = list()
-while n != '':
-    b.append(float(n))
-    n = input('введи ')
-ted(b) 
+from задача1 import itog
+
+sum = int()
+a = itog()
+for i in range(1,len(a) + 1):
+    print(i)
+    sum += i
+v = round(sum/len(a))
+print(v)
