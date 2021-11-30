@@ -1,6 +1,6 @@
 d = [1, 2, 3, 4, 5, 6, 7]
-d = sorted(d)
 def poisk(d, n):
+    d = sorted(d)
     lower = 0
     upper = len(d) - 1
     while lower <= upper:
