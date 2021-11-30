@@ -17,7 +17,7 @@ def poisk(d, n):
 n = int(input("Элемент, который необходимо обнаружить: "))
 print(poisk(d, n))
 assert poisk([1, 2, 3, 4, 5, 6, 7], 5) == 4
-assert poisk([7, 22, 34, 41, 75, 69, 77], 7) == 0
+assert poisk([7, 22, 34, 41, 69, 75, 77], 7) == 0
 assert poisk([5, 42, 55, 77, 634, 2345, 33245], 1) == None
 assert poisk([], 1) == None
 assert poisk([7, 7, 7], 7) == 1
