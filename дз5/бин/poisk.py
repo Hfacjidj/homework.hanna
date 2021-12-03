@@ -8,7 +8,7 @@ def poisk(d, n):
     while lower <= upper:
         center = (lower + upper) // 2
         if d[center] == n:
-            for m in range(center+1):
+            for m in range(center + 1):
                 if d[m] == d[center] and m < center:
                     center = m
             return center
