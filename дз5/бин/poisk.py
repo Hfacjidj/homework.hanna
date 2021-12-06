@@ -3,20 +3,18 @@ d = [1, 2, 3, 4, 5, 6, 7]
 
 def poisk(d, n):
     d = sorted(d)
-    lower = 0
+    lower = -1
     upper = len(d) - 1
-    while lower <= upper:
+    while lower < upper - 1:
         center = (lower + upper) // 2
-        if d[center] == n:
-            for m in range(center + 1):
-                if d[m] == d[center] and m < center:
-                    center = m
-            return center
-        elif d[center] > n:
-            upper = center - 1
-        elif d[center] < n:
-            lower = center + 1
-    return None
+        if d[center] >= n:
+            upper = center
+        else:
+            lower = center
+    if upper >= 0 and d[upper] == n:
+        return upper
+    else:
+        return None
 
 
 n = int(input("Элемент, который необходимо обнаружить: "))
