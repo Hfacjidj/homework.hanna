@@ -6,13 +6,19 @@ class Matrix():
         self.strok = strok
         self.stolb = stolb
         self.elements = elements
-        self.spisok = []
+        self.matrix = []
     def input(self):
         strok = int(input())
         stolb = int(input())
+        for i in range(strok):
+            tn = []
+            for j in range(stolb):
+                k = int(input('ведите число'))
+                tn.append(k)
+            self.matrix.append(tn)
     def __str__(self):
         string = ''
-        for i in self.mat:
+        for i in self.matrix:
             for j in i:
                 string = string+'%s\t' %(j)
             string = string[:-1]
@@ -22,4 +28,5 @@ class Matrix():
  
 a = [[1,2,3],[4,5,6],[7,8,9]]
 m = Matrix(a)
+m.input()
 print(m)
