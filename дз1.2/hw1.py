@@ -18,11 +18,11 @@ class Matrix():
             self.matrix.append(tn)
     def __str__(self):
         string = ''
-        for i in self.matrix:
+        for i in self.matrix: #перебирает вложенные в нее списки
             for j in i:
-                string = string+'%s\t' %(j)
-            string = string[:-1]
-            string = string+'\n'
+                string = string+'%s\t' %(j) #берет элемент j добавляет пробел после него, превращает в стринговую переменную и закидывает в отдельную переменную стринг\t- добавляет пробел
+            string = string [:-1] #перебирает любую итерируемую вещь, в обратном направлении
+            string = string+'\n' #добавляет переход на новую строку
         string = string[:-1]
         return string
  
