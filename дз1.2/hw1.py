@@ -1,15 +1,15 @@
 class Matrix:
-    def __init__(self, strok=0, stolb=0):
+    def __init__(self, strok=1, stolb=1):
         self.strok = strok
         self.stolb = stolb
-        self.matrix = []
+        self.matrix = [[0]]
 
     def input(self):
-        strok = int(input())
-        stolb = int(input())
-        for _ in range(strok):
+        self.strok = int(input())
+        self.stolb = int(input())
+        for _ in range(self.strok):
             tn = []
-            for _ in range(stolb):
+            for _ in range(self.stolb):
                 k = int(input("ведите число"))
                 tn.append(k)
             self.matrix.append(tn)
@@ -18,7 +18,9 @@ class Matrix:
         return "\n".join(["\t".join(map(str, x)) for x in self.matrix])
 
 
-a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-m = Matrix(a)
+m1 = Matrix()
+print(m1)
+
+m = Matrix()
 m.input()
 print(m)
