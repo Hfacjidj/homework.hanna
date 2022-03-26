@@ -3,6 +3,8 @@ from matrix_app.matrix import Matrix
 
 class Matrix2x2(Matrix):
     def __init__(self, matrix=None):
+        if matrix is None:
+            matrix = [[0]]
         assert len(matrix) == 2, "Должно быть два столбца"
         assert len(matrix[0]) == 2, "Длина первой строки должно быть 2"
         assert len(matrix[1]) == 2, "Длина 2 строки должно быть 2"
