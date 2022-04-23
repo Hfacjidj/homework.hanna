@@ -6,6 +6,7 @@ class Matrix(ABC):
         if matrix is None:
             matrix = [[0]]
         self.stolb = 1
+        self.strok = 1
         self.matrix = matrix
 
     def input(self):

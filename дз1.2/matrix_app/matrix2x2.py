@@ -12,11 +12,14 @@ class Matrix2x2(Matrix):
         self.strok = 2
         self.stolb = 2
         self.matrix = matrix
-        
+
     def input(self):
         super().input()
         assert self.strok == 2, "Должно быть 2 строки"
         assert self.stolb == 2, "Должно быть 2 столбца"
 
     def determinant(self):
-        return self.matrix[0][0] * self.matrix[1][1] - self.matrix[0][1] * self.matrix[1][0]
+        return (
+            self.matrix[0][0] * self.matrix[1][1]
+            - self.matrix[0][1] * self.matrix[1][0]
+        )
